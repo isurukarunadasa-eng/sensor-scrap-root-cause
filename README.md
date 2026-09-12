@@ -38,19 +38,3 @@ docs/           milestone write-ups and architecture diagrams
 tests/          sanity checks on parsing and feature logic
 ```
 
-## Setup
-
-```bash
-python -m venv venv
-source venv/bin/activate   # Windows: venv\Scripts\activate
-pip install -r requirements.txt
-```
-
-## Status
-
-Project start: [fill in date]
-Current milestone: [fill in]
-
-## Author
-
-[Your name] — [course code], [institution]
