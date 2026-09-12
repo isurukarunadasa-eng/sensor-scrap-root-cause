@@ -1,0 +1,36 @@
+# --- Confidential data: never commit real production data ---
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+*.xlsx
+*.xls
+!data/sample/*.xlsx
+root_cause_records*
+*confidential*
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+
+# --- Jupyter ---
+*.ipynb_checkpoints
+
+# --- OS / editor ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# --- Model artifacts (usually too large / regenerable) ---
+*.pkl
+*.joblib
+models/*.h5
+
+# --- Environment / secrets ---
+.env
