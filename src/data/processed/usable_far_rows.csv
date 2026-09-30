@@ -1,0 +1,317 @@
+CC_reference,PO,article_no,series,symptom,root_cause_category,root_cause_narrative,qty,po_already_covered
+CC-24121708,2021914,330-010-010,500-04/M5 IC,Hysteresis fail,Gap between front cap & ferrite,Loctite 638 adhesion issue,4,True
+CC-25011779,2023103,330-010-010,500-04/M5 IC,3kg pull force test fail,Lack of gluing strength,Adhesion issue of Loctite 638 from India,8,True
+CC-25014505,2020356,330-010-017,500-04/M5 IC,No sense,Coil damage,Suspected coil strands damage during rework process for the front cap replacement due to front cap pop up,9,True
+CC-25011861,1480729,330-020-017,500-04/M5 IC,Function failure,ASIC loose,Possible root cause - too much pressure from the sides of the ASIC,11,True
+CC-25011890,1482171,330-020-017,500-04/M5 IC,Function failure,ASIC loose,Extra pressure on PCBAs on vises-Unawarness of sufficient force,5,True
+CC-25013003,2009460,330-010-010,500-04/M5 IC,Function failure,ASIC loose,Suspected lack of solder bond between ASIC balls and solder pads of PCBA,5,True
+CC-25012720,2007445,330-027-000,500-04/M5 IC,Function failure,ASIC loose,"Suspected lack of solder bond between ASIC balls and solder pads of PCBA, Material supplier issue",3,True
+CC-25012354,1487354,330-020-017,500-04/M5 IC,Distance fail,Ferrite cracked,Possible root cause - excess stress on ferrites from part holder tools P01/P06 & P02,3,True
+CC-25012099,1483528,330-020-017,500-04/M5 IC,No power,ASIC loose,Possible cause-excessive pressure during depaneling,6,True
+CC-25011889,1482171,330-020-017,500-04/M5 IC,Always on,Coil partially damage (resistance value is high),Unsafe handling of coils by tweezers and dropping coils,4,True
+CC-25012408,1490260,330-020-017,500-04/M5 IC,No sense,"ASIC loose, ASIC missing",Suspected material issue with lack of strength of soldering strength between solder balls in the IC and PCAB pads,9,True
+CC-25012355,1487313,330-020-017,500-04/M5 IC,Function failure,ASIC loose,"Under investigation by PE, QM & Supplier",8,True
+CC-25012984,2008781,330-010-010,500-04/M5 IC,Function failure,ASIC loose,Suspected lack of solder bond between ASIC balls and solder pads of PCBA,3,True
+CC-25012951,2008779,330-010-010,500-04/M5 IC,Function failure,ASIC loose,Suspected lack of solder bond between ASIC balls and solder pads of PCBA,3,True
+CC-25013008,2008357,330-010-017,500-04/M5 IC,Function failure,ASIC loose,Suspected lack of solder bond between ASIC balls and solder pads of PCBA,5,True
+CC-25012952,2008779,330-010-010,500-04/M5 IC,Always on,ASIC bridge,"Solder bridge under the ASIC, supplier issue",3,True
+CC-25014467,2019785,330-010-017,500-04/M5 IC,No sense,High coil resistance,Suspected coil strands damage during rework process for the front cap replacement due to front cap pop up,11,True
+CC-25012597,1497808,330-020-017,500-04/M5 IC,Function failure,ASIC loose,Suspected material issue with lack of strength of soldering strength between solder balls in the IC and PCAB pads,3,True
+CC-25012100,1483528,330-020-017,500-04/M5 IC,No power,ASIC loose,To be defined,6,True
+CC-25012739,2007755,330-010-013,500-04/M5 IC,Function failure,ASIC loose,"Suspected lack of solder bond between ASIC balls and solder pads of PCBA, Material supplier issue",9,True
+CC-25014001,1529093,330-020-017,500-04/M5 IC,Appearance issue,Front cap damaged,"Suspected sensors cleaned with Acetone during hotmelt, housing operation",56,True
+CC-25014513,1561827,330-020-017,500-04/M5 IC,Always on,High coil resistance,Suspected coil strands damaged during front cap rework process due to front cap bending issue,4,True
+CC-25013009,2008357,330-010-017,500-04/M5 IC,No power,ASIC peal off from PCB,Suspected lack of solder bond between ASIC balls and solder pads of PCBA,6,True
+CC-25012991,2008360,330-010-017,500-04/M5 IC,Function failure,ASIC loose,Suspected lack of solder bond between ASIC balls and solder pads of PCBA,4,True
+CC-25013119,1516087,320-520-166,500-04/M5 IC,Function failure,ASIC loose,Suspected lack of solder bond between ASIC balls and solder pads of PCBA,7,True
+CC-25013040,2009405,330-010-010,500-04/M5 IC,Function failure,ASIC loose,Suspected lack of solder bond between ASIC balls and solder pads of PCBA,3,True
+CC-25013043,2009410,330-010-017,500-04/M5 IC,Function failure,ASIC loose,Suspected lack of solder bond between ASIC balls and solder pads of PCBA,3,True
+CC-25014478,2019784,330-010-017,500-04/M5 IC,Always on,High coil resistance,"Coil strands damage during rework process for the front cap replacement due to front cap pop up issue, Material issue with front cap",7,True
+CC-25014479,2019784,330-010-017,500-04/M5 IC,No sense,Coil damage,"Coil damage during rework process for the front cap replacement due to front cap pop up issue, Material issue with front cap",3,True
+CC-25013999,1529093,330-020-017,500-04/M5 IC,Appearance issue,Front cap damaged,Suspected sensors cleaned with Acetone during assembly operation,56,True
+CC-25014510,1561826,330-020-017,500-04/M5 IC,No sense,Coil damage,Suspected coil damaged during front cap rework process due to front cap bending issue,6,True
+CC-25014509,1561826,330-020-017,500-04/M5 IC,Always on,High coil resistance,Suspected coil strands damaged during front cap rework process due to front cap bending issue,3,True
+CC-25014000,1529093,330-020-017,500-04/M5 IC,Appearance issue,Front cap damaged,"Sensors cleaned with Acetone during packing, final test operation",56,True
+CC-25014569,1494895,330-020-017,500-04/M5 IC,Torque test fail,Broken connectors and rotating PCBAs,Possible cause - Excess torque applied during torque test,10,True
+CC-25014570,1494895,330-020-017,500-04/M5 IC,Torque test fail,Broken connectors and rotating PCBAs,Lack glue application to PCBA during housing inserting,10,True
+CC-25047782,2026277,330-010-017,500-04/M5 IC,Always on,Ferrite crack,Reworked due to glue application error_Force applied from front cap end,11,True
+CC-25057882,2027014,330-010-017,500-04/M5 IC,Always on,Coil damage,Suspected Coil damaged form top side during cap rework process in housing due cap popup issue.,4,True
+CC-25057989,1584655,330-020-017,500-04/M5 IC,No sense,Coil damage,Coil damage occurs during head assembly rework done due to head alignment issue.,4,True
+CC-25058047,2028089,330-010-017,500-04/M5 IC,No sense,Ferrite crack,Ferrite crack caused due to misalignment in molding tool,6,True
+CC-25058056,1587592,330-020-017,500-04/M5 IC,Eeprom fail,Wrong PCBA assembled,Lack of attention during potting process. pcs of two OFs mixed up during potting step.(1587592 and 1586722),16,True
+CC-25058076,2028090,330-010-017,500-04/M5 IC,Always on,High Coil Resistance,Suspected coil strands damaged from top side during front cap rework process.,4,True
+CC-25088942,2029373,330-027-000,500-04/M5 IC,Distance fail,Excess glue amount,Root cause unclear,9,True
+CC-25088965,2030179,330-010-010,500-04/M5 IC,No sense,Coil Damaged,Coil damaged when ferrite dislocated from PCBA due to adhesion issue of loctite 431,11,True
+CC-25099235,2032946,330-027-000,500-04/M5 IC,Sauna fail,Ferrite crack,FA suspected root cause–The ferrite cracked during the molding operation due to molding tool alignment issues OR The ferrite cracked when the sensor was pressed into the molding tool with the ferrite and PCBA not perpendicular issue.OR,1,True
+CC-25109456,1620305,330-020-017,500-04/M5 IC,Distance fail,Ferrite crack,Ferrite cracked due to excess Loctite 406 glue amount applied on ferrite causing excessive force applied on ferrite,21,True
+CC-25109467,2033535,330-010-010,500-04/M5 IC,Sauna fail,Excess glue amount on PCBA components.,Improvement needed in thermal characterization,5,True
+CC-25109524,1620305,330-020-017,500-04/M5 IC,Appearance issue,Glue inside the connector,Lack of attention during housing. Not checked the cleanliness of the housing and the connector according to GB. Not done post inspection.,5,True
+CC-25119897,2034595,330-010-017,500-04/M5 IC,Sauna fail,Potting layer in between ferrite and front cap,Front cap material issue from supplier,15,True
+CC-251210038,2035577,330-010-017,500-04/M5 IC,Eeprom fail,Coil damage,Coil damaged during coil wire soldering due to a damaged tweezer.,12,True
+CC-251210043,1631123,330-020-017,500-04/M5 IC,Appearance issue,Excess potting,Applying excess potting due to insulation tape not positioned correctly,6,True
+CC-251210046,1631536,330-020-017,500-04/M5 IC,Appearance issue,Insufficient Glue Coverage (on the LED),FA suspected root cause – Not applied sufficient Loctite 638 Glue when doing housing step,6,True
+CC-251210060,1631479,330-020-017,500-04/M5 IC,Eeprom fail,Coil damage,Coil damage due to poor coil soldering procedure. Lack of attention of the operator.,5,True
+CC-251210163,1631655,330-020-017,500-04/M5 IC,Sauna fail,Ferrite crack,The ferrite cracked during the molding operation as the ferrite and PCBA not perpendicular due to cutting edge gets slanted with the cutting plier.,6,True
+CC-260110398,2036653,330-010-010,500-04/M5 IC,Always on,Ferrite crack,Ferrite cracked due to Excess Loctite 406 Glue amount applied on ferrite Causing excessive force applied on ferrite,6,True
+CC-260110441,2036650,330-010-010,500-04/M5 IC,Sauna fail,Ferrite crack,FA suspected root cause – The ferrite cracked during the molding operation due to molding tool alignment issues,6,True
+CC-260210698,2036956,330-010-017,500-04/M5 IC,Sauna fail,Ferrite crack,The ferrite cracked during the molding operation due to molding tool alignment issues,5,True
+CC-260210821,2036955,330-010-017,500-04/M5 IC,No sense,Eeprom 7015 - Coil damage,FA Suspected root cause- Coil damages has occurred during coil tinning or coil soldering in assembly process,5,True
+CC-260210872,1644852,330-010-010,500-04/M5 IC,No power,Wire detached from the solder joint/ Some pcs are retested and passed,"Low attention during wire soldering process, wire soldered partially",17,True
+CC-260210884,1646228,330-010-017,500-04/M5 IC,Sauna fail,Ferrite crack,The ferrite cracked during the molding operation as the ferrite and PCBA not perpendicular due to cutting edge gets slanted with the cutting plier.,11,True
+CC-260311046,1644851,330-010-010,500-04/M5 IC,No sense,Eeprom 4020 - ASIC damage,FA Suspected root cause- ASIC damage occurs during assembly process or during rework process,11,True
+CC-260411398,1653943,330-010-017,500-04/M5 IC,Sauna fail,Ferrite crack,The ferrite cracked during the molding operation as the ferrite and PCBA not perpendicular due to cutting edge gets slanted with the cutting plier.,6,True
+CC-260411402,2038285,330-027-000,500-04/M5 IC,Distance fail,Ferrite crack,The ferrite cracked during the molding operation as the ferrite and PCBA not perpendicular due to cutting edge gets slanted with the cutting plier.,8,True
+CC-260411432,1653938,330-010-010,500-04/M5 IC,3kg pull force test fail,Cable and sensor pushed out of the sensor,PCB Assembly has not bonded properly with housing due to insufficient gluing. Definition for amount of glue and area of applications is not so clear enough.,8,True
+CC-260511922,2040049,330-010-017,500-04/M5 IC,Sauna fail,Ferrite crack,Ferrite cracked due to Excess Loctite 406 Glue amount applied on ferrite Causing excessive force applied on ferrite,7,True
+CC-260511961,2040047,330-010-017,500-04/M5 IC,Sauna fail,Ferrite crack,Ferrite cracked due to Excess Loctite 406 Glue amount applied on ferrite Causing excessive force applied on ferrite,9,True
+CC-260511975,2039983,330-010-010,500-04/M5 IC,No sense,Eeprom 7015 - Coil damage,FA Suspected root cause- Suspect rework has done due to high glue amount on ferrite and rework may done due to head issue,5,True
+CC-260813141,2043579,330-010-017,500-04/M5 IC,Appearance issue,Blue potting on LED,FA suspected root cause – Excess Blue potting filled on the LED due to blue potting mixed with transparent potting caused by improper ovening process,12,True
+CC-260913201,2041711,330-010-010,500-04/M5 IC,Sauna fail,Ferrite crack,Ferrite cracked due to force exerted on the ferrite as a result of excess Loctite 406 glue amount applied on ferrite,13,True
+CC-260913205,2043580,330-010-017,500-04/M5 IC,Sauna fail,Ferrite crack,Ferrite cracked due to force exerted on the ferrite as a result of excess Loctite 406 glue amount applied on ferrite,8,True
+CC-24121638,1568619,330-020-335,500-065 IC,No power,PCBA damage,Excess potting poured in the transparent potting operation and PCBA damage due to insufficient space during inserting PCBA to housing in second potting,4,True
+CC-24121654,1571949,330-020-335,500-065 IC,Appearance issue,Pallet not aligned,Pallet not aligned due to manual assembly without using tool.Tool is under not working,5,True
+CC-25012499,2005715,330-010-325,500-065 IC,Appearance issue,Applied transparent potting prior to applying blue potting,Lack of tool capacity and lack of proper communication between two shifts,27,True
+CC-25012455,1490547,330-020-325,500-065 IC,High current,Coil wire bridge with ground pad,"Excess solder on the solder joint between round pcb and other pcb, hence coil wire bridge with solder joint",5,True
+CC-25012168,1483505,330-020-335,500-065 IC,Function failure,ASIC loose,Unidentified,4,True
+CC-25013028,2009638,330-010-325,500-065 IC,Function failure,ASIC loose,Suspected material issue with lack of strength of soldering strength between solder balls in the IC and PCAB pads,9,True
+CC-25011941,1481144,330-020-335,500-065 IC,Appearance issue,Low cap,Uncentered force/misalignment from the tool-lack of pre verifications and maintenances,10,True
+CC-25012884,2008760,330-010-325,500-065 IC,Function failure,ASIC loose,Suspected material issue with lack of strength of soldering strength between solder balls in the IC and PCAB pads,4,True
+CC-25012558,1494873,330-020-335,500-065 IC,Insulation fail,Solder on insulation tape,"Lack of attention to soldering step, solder deposited on insulation tape before housing inserting, used training operator 868",1,True
+CC-25012903,2008815,330-010-335,500-065 IC,Insulation fail,Shield contact with housing,"Shield is not completely covered with tape, Process violation",13,True
+CC-25012829,1506301,330-020-335,500-065 IC,Function failure,ASIC loose,Suspected material issue with lack of strength of soldering strength between solder balls in the IC and PCAB pads,5,True
+CC-25011942,1481144,330-020-335,500-065 IC,Appearance issue,Low cap,Uncentered ferrite placement on the pallet/unbalanced round PCB soldering-Operator's 1st order after training,10,True
+CC-25012500,2005715,330-010-325,500-065 IC,Appearance issue,Applied transparent potting prior to applying blue potting,Lack of concern for the order to identify blue potting to be done and blue potting completed sensors,27,True
+CC-25024749,1577079,330-020-335,500-065 IC,Appearance issue,High Cap,Unavailability of pallet centering tool and not checked the pallet exceeding the housing edge,14,True
+CC-260311226,1646732,330-020-335,500-065 IC,Appearance issue,Plastic pallet improperly glued,"Due to pin length high in the pushdown head, the pallet glued tilted, and tried to replace new pallets",6,True
+CC-260512042,2040294,330-010-325,500-065 IC,Insulation fail,Contact between shield and housing,The shield soldering position and the the edge of the shield contacted with the housing. Operator negligence.,8,True
+CC-24111547,1566420,330-020-335,500-065/M8 IC,No sense,Flex LED damaged,Excess stress applied on LED pads during handling PCBA in 1st potting process,26,True
+CC-25014686,1577207,330-020-359,500-065/M8 IC,Distance fail,Gap between ferrite and front cap,Low glue amount applied on ferrite,5,True
+CC-25024886,1578728,330-020-359,500-065/M8 IC,Distance fail,Shield misalignment,Not correctly check the position of gap between ferrite & shield (gap between ferrite & shield 1mm),16,True
+CC-25024950,1576452,330-020-357,500-065/M8 IC,Distance fail,Gap between ferrite and front cap,Adhesion issue of loctite 480(Loctite 480 visible in front cap),13,True
+CC-260511738,1653954,330-020-335,500-065/M8 IC,Always on,Eeprom 7015 - Coil damage,Possible coil damaged when separating the coil wires due to raw material issue (coil wires too close),8,True
+CC-260612179,1664311,330-020-051,500-065/M8 IC,Always on,Eeprom 7014 - excess glue amount on ferrite,Due to high glue amount applied on ferrite failure has occurred.,4,True
+CC-260712712,1671670,330-020-335,500-065/M8 IC,Always on,Eeprom 7015 - Coil damage,Possible coil damaged when separating the coil wires due to raw material issue (coil wires too close),3,True
+CC-24121607,1571956,330-020-373,500-M12 IC,Distance fail,Gap between front cap and ferrite,Adhesion issue of loctite 480,5,True
+CC-25011751,1571405,330-020-367,500-M12 IC,Distance fail,Gap between ferrite and front cap,Loctite 480 issue,27,True
+CC-25011752,1571405,330-020-367,500-M12 IC,Distance fail,Shield misaligned,"Position of shield measurement are incorrect according to the DMO, Gap between shield ends exceeded the specified limit in the DMO.",27,True
+CC-25012447,1489113,330-020-375,500-M12 IC,Hysteresis fail,Gap between ferrite and front cap,Not applied glue to fix ferrite and cap,3,True
+CC-25014545,1562436,330-020-373,500-M12 IC,Distance fail,Gap between ferrite and front cap,Adhesion issue of loctite 480,10,True
+CC-25014544,1562436,330-020-373,500-M12 IC,Distance fail,Gap between ferrite and front cap,Adhesion issue of loctite 480,10,True
+CC-25012564,1492033,330-020-373,500-M12 IC,Distance fail,Unknown - R&D analyzing this failure,Possible cause - Tester and sensor technical parameter deviations due to analog sensor type,11,True
+CC-25012055,1483564,330-020-373,500-M12 IC,Always on,Flex bridged with excess solder,Excess tinned solder pads,2,True
+CC-25012448,1489113,330-020-375,500-M12 IC,No power,Improper connection of test cable,"Poor connection on test cable with sensor, operator negligence, 3 pcs got passed out of 4 when re tested",1,True
+CC-25012964,1512944,330-020-374,500-M12 IC,Distance fail,Gap between ferrite and front cap,"Marginal excess glue, failed in tester 6, but passed 9 pcs out of total 12 in tester 5, Deviations in tester 05",3,True
+CC-25012906,1509446,330-020-373,500-M12 IC,High current,ASIC heated,Suspected Solder balls in the ASIC is bridged. Cannot not investigate the bridge by removing the ASIC. When removing ASIC. Bridge also removes. PLST test may not identified high current failure,3,True
+CC-25012057,1483564,330-020-373,500-M12 IC,Always on,Flex bridged with excess solder,Solder short detecting test adaptor is out of order,2,True
+CC-25012449,1489113,330-020-375,500-M12 IC,No power,Improper connection of test cable,"Poor connection on test cable with sensor, operator negligence, 3 pcs got passed out of 4 when re tested",4,True
+CC-25012880,2008818,330-010-158,500-M12 IC,Function failure,ASIC loose,Suspected material issue with lack of strength of soldering strength between solder balls in the IC and PCAB pads,3,True
+CC-25013116,1517844,330-020-373,500-M12 IC,No sense,Flex bridge,"Marginally excess solder, untested or wrongly tested sensors from the intermediate assembly test",7,True
+CC-25012056,1483564,330-020-373,500-M12 IC,Distance fail,Excess loctite on coil & front cap not fitted properly,Lack of attention to glue process,7,True
+CC-25012058,1483564,330-020-373,500-M12 IC,Distance fail,Excess loctite on coil & front cap not fitted properly,Lack of attention to glue process,7,True
+CC-25014113,2017423,330-010-158,500-M12 IC,Always on,High coil resistance,"Partially soldered the tinned part of the coil wire, soldering defect, process deviation",4,True
+CC-25012565,1492033,330-020-373,500-M12 IC,Distance fail,Unknown - R&D analyzing this failure,Possible cause - Wornout targets,11,True
+CC-25012758,1493823,330-020-373,500-M12 IC,Distance fail,Gap between ferrite and front cap,"Lack of time on magnet tool or untreated caps, Lack of skills, done by a trainee",7,True
+CC-25012950,1512943,330-020-373,500-M12 IC,Distance fail,Gap between ferrite and front cap,Marginally excess glue applied on ferrites,14,True
+CC-25014114,2017423,330-010-158,500-M12 IC,No sense,High coil resistance,"Soldered the insulated part of the coil wire more than the tinned part, soldering defect, process deviation",3,True
+CC-25013940,1536628,330-020-367,500-M12 IC,Distance fail,Gap between ferrite and front cap,Applied excess glue on ferrite,8,True
+CC-25014543,1562436,330-020-373,500-M12 IC,Distance fail,Gap between ferrite and front cap,Possible cap treatment issue,10,True
+CC-25014636,1577208,330-020-373,500-M12 IC,Distance fail,Gap between front cap and ferrite,Loctite 480 adhesion issue,6,True
+CC-25024894,1575603,330-020-375,500-M12 IC,No power,Cable wire solder pads peeled off from the PCB,Suspected cable sheath pulled up with excess force.,16,True
+CC-25047794,1591396,330-020-373,500-M12 IC,Appearance issue,High cap,Lack of attention during force fit the front cap in the housing. Not done post inspection.,6,True
+CC-25109387,1620596,330-020-373,500-M12 IC,Distance fail,Gap between ferrite and front cap,Suspected Loctite 480 adhesive issue or front cap plasma treatment issue.,11,True
+CC-25119908,1627714,330-020-373,500-M12 IC,Distance fail,Gap between ferrite and front cap,FA suspected root cause - Sensors not placed on the magnetic holder for the required time and not checked cap is well glued by pulling it slightly. or front cap not plasma treated,6,True
+CC-260210556,1641150,330-020-367,500-M12 IC,Eeprom fail,Eeprom 7026 - Excessive Gap between two shield ends,Copper Shield not aligned to the ferrite edge. Shield position requirement need to be enhanced.,13,True
+CC-260311135,1643757,330-020-367,500-M12 IC,Eeprom fail,Eeprom 7026 - No Mechanical Deviation Found,FA suspected root cause – possible failure due to final test parameter issue,7,True
+CC-260712500,1666075,330-020-367,500-M12 IC,Eeprom fail,Eeprom 7026 - High gap between two shield ends,Copper Shield not aligned to the ferrite edge. Shield position requirement need to be enhanced.,10,True
+CC-260712592,1665508,330-020-374,500-M12 IC,Eeprom fail,Gap between ferrite and front cap,FA Suspected root cause- Magnetic tool issue or operator does not put sensor desired time on magnetic tool,30,True
+CC-260712691,1669632,330-020-373,500-M12 IC,Eeprom fail,Eeprom 7026 - Excessive Gap between two shield ends,Copper Shield not aligned to the ferrite edge. Shield position requirement need to be enhanced.,8,True
+CC-260813063,1676578,330-020-373,500-M12 IC,Distance fail,Gap between ferrite and front cap,FA suspected root cause - Sensors not placed on the magnetic holder for the required time and not checked cap is well glued by pulling it slightly. or front cap not plasma treated,6,True
+CC-260913529,1681134,330-020-375,500-M12 IC,Distance fail,Gap between ferrite and front cap,"Possible Loctite 480 issue, caused poor bonding between ferrite and front cap OR magnetic tool strength issue.",7,True
+CC-25011983,1485484,330-020-394,500-M18 IC,Eeprom fail,Flex PCB bridge from solder pads,Lack of attention to soldering,4,True
+CC-25011973,1484731,330-020-380,500-M18 IC,High current,Coil wire bridge with ground pad,Lack of attention to solder points,4,True
+CC-25012234,1486463,330-020-380,500-M18 IC,No sense,Distance measurement fails,Distance variations in analog sensor types clear root cause is undefined from RnD,24,True
+CC-25013016,1512192,330-020-283,500-M18 IC,Function failure,LED damaged,Possible extended bending of the flex PCBA causing to crack the LED solder joint,2,True
+CC-25012560,1496744,330-020-395,500-M18 IC,Eeprom fail,Flex PCB bridge from solder pads,Difficulty to visually detect the solder bridging and no accurate verification method to verify solder bridges,4,True
+CC-25013124,1519727,330-020-396,500-M18 IC,Distance fail,Gap between ferrite and front cap,Curing problem of the glue 480,4,True
+CC-25013931,1530853,330-020-396,500-M18 IC,Distance fail,Gap between ferrite and front cap,"Applied excess glue on ferrite, suspected reworked the caps with additional glue when caps are removed during the process",5,True
+CC-25011971,1484731,330-020-380,500-M18 IC,High current,Coil wire bridge with ground pad,Lack of attention to solder points,4,True
+CC-25011972,1484731,330-020-380,500-M18 IC,High current,Coil wire bridge with ground pad,Lack of attention to solder points,4,True
+CC-25012233,1486463,330-020-380,500-M18 IC,No sense,Cable removed from PCBA,Possible cause - Followed improper wire order to solder causing excess stress on wire,1,True
+CC-25012239,1487350,330-020-295,500-M18 IC,Eeprom fail,LED not functioning during operation,"Checked the flex soldering, and LED soldering but no damages found. The LED is in good condition as well. But when checked manual functio, the sensors are continuosly switchin on and off (for all other types this happens when LED or path is damaged but no",20,True
+CC-25011984,1485484,330-020-394,500-M18 IC,Eeprom fail,Flex PCB bridge from solder pads,Lack of attention to soldering,4,True
+CC-25013988,1541952,330-020-396,500-M18 IC,Distance fail,Gap between ferrite and front cap,Suspected adjustment issue of the tool 301 484,6,True
+CC-25013933,1530853,330-020-396,500-M18 IC,Distance fail,Gap between ferrite and front cap,"Applied excess glue on ferrite, suspected reworked the caps with additional glue when caps are removed during the process",5,True
+CC-25013015,1512192,330-020-283,500-M18 IC,No sense,High coil resistance,"Process indicator for soldering; Coil insulation is also soldered to PCBA pad with the tin part, possibility of reduction tin part soldered to the pads",3,True
+CC-25013022,1513960,330-020-396,500-M18 IC,High current,Flex PCB bridge from solder pads,Excess solder and not performed intermediate test to detect flex bridges,4,True
+CC-25013989,1541952,330-020-396,500-M18 IC,Distance fail,Gap between ferrite and front cap,Suspected loctite 480 adhesion issue between ferrite and front cap,6,True
+CC-25013196,1523717,330-020-380,500-M18 IC,Distance fail,Gap between ferrite and front cap,Loctite 480 adhesion issue,5,True
+CC-25013125,1519727,330-020-396,500-M18 IC,Distance fail,Gap between ferrite and front cap,Curing problem of the glue 480,4,True
+CC-25013990,1541952,330-020-396,500-M18 IC,Distance fail,Gap between ferrite and front cap,Suspected curing problem of the glue 480,6,True
+CC-25024905,1581539,330-020-396,500-M18 IC,Parameter fail,Components damaged,Suspected blue PUR step it's 2mm needle inserting when component can be damaged,9,True
+CC-25047848,1592339,330-020-380,500-M18 IC,Eeprom fail,Glue over the PCBA Components,Lack of attention during Assembly process.Not followed DMO instructions carefully in glueing step.,2,True
+CC-25119934,1630655,330-020-295,500-M18 IC,Appearance issue,Blue potting leaked to light guide,"Due to bubbles in transparent potting, blue potting leaked to transparent potting and visible via LED hole.",6,True
+CC-25119959,1626711,330-020-396,500-M18 IC,Distance fail,Gap between ferrite and Front cap,Possible plasma treatment not properly done or Cap not properly pushed down to ferrite,6,True
+CC-260110325,1636146,330-020-396,500-M18 IC,Distance fail,Gap between shield ends high and ferrite note centered.,Worn-out tool part holder 301 484 and misalignment of ferrite due to that,6,True
+CC-260110377,1636143,330-020-396,500-M18 IC,Distance fail,Ferrite not centered within the Front cap & Shield,Worn-out tool part holder 301 484 and misalignment of ferrite due to that,11,True
+CC-260110379,1636142,330-020-396,500-M18 IC,Distance fail,Ferrite not centered within the Front cap & Shield,Worn-out tool part holder 301 484 and misalignment of ferrite due to that,16,True
+CC-260110514,1637346,330-020-396,500-M18 IC,Distance fail,Ferrite not centered within the Front cap & Shield,Worn-out tool part holder 301 484 and misalignment of ferrite due to that,8,True
+CC-260210543,1637341,330-020-396,500-M18 IC,Eeprom fail,Eeprom 7026 - Ferrite not centered within the Front cap / Shield misalignment,Worn-out tool part holder 301 484 and misalignment of ferrite due to that,6,True
+CC-260210659,1636142,330-020-396,500-M18 IC,Distance fail,Ferrite not centered within the Front cap & Shield,Worn-out tool part holder 301 484 and misalignment of ferrite due to that,10,True
+CC-260310952,1646678,330-020-396,500-M18 IC,Eeprom fail,Eeprom 7026 - ferrite not centered,Worn-out tool part holder 301 484 and misalignment of ferrite due to that,8,True
+CC-260310970,1646677,330-020-396,500-M18 IC,No sense,Eeprom 7022 - ASIC Loose,ASIC material issue_Loosely bonded to the PCBA,7,True
+CC-260511783,1653820,330-020-380,500-M18 IC,No power,Blue wire detached from the PCB with solder pad,FA suspected root cause – wire detached by excess force applied on the cable due to handling issue OR excess force applied on solder point due to cable bending when injecting PUR OR during rear cap inserting,5,True
+CC-260712694,1671018,330-020-396,500-M18 IC,Distance fail,ferrite not centered,Worn-out tool part holder 301 484 and misalignment of ferrite due to that,5,True
+CC-260812938,1676266,330-020-396,500-M18 IC,Distance fail,Ferrite not centered within the Front cap & Shield,Worn-out tool part holder 301 484 and misalignment of ferrite due to that,5,True
+CC-260812950,1676267,330-020-396,500-M18 IC,Distance fail,ferrite not centered,Worn-out tool part holder 301 484 and misalignment of ferrite due to that,11,True
+CC-260812978,1677580,330-020-396,500-M18 IC,Eeprom fail,Eeprom 7022 - Flex PCB shortned,Possible solder bridged due to excess tin on solder points. No method to check.,8,True
+CC-260812989,1677583,330-020-396,500-M18 IC,Distance fail,IDistUnom fail - Solder Bridge between Flex PCB solder points,Possible solder bridged due to excess tin on solder points. No method to check.,8,True
+CC-260813118,1677577,330-020-396,500-M18 IC,Distance fail,Ferrite not centered within the Front cap & Shield,Worn-out tool part holder 301 484 and misalignment of ferrite due to that,6,True
+CC-24111469,1559792,320-020-516,500-M18 IM,Distance fail,Trimming Failure,Suspected uncontrollable trimming operation.,25,True
+CC-24111579,1567704,320-020-516,500-M18 IM,Distance fail,Trimming Failure,Suspected uncontrollable trimming operation.,10,True
+CC-24111580,1567704,320-020-516,500-M18 IM,Distance fail,Trimming Failure due to flex removed from solderpad,Flex removed with solder pad due to excess heat and time during soldering,10,True
+CC-25013316,1523562,320-020-516,500-M18 IM,Distance fail,Trimming failure,"Suspected lack of trimming skills of the operator, Operator is under training",5,True
+CC-25014469,1556028,320-020-516,500-M18 IM,Distance fail,Insulation tape misaligned,"Incorrectly positioned shield & insulation tape, DMO has not specified the gap between ferrite and insulation tape.",10,True
+CC-25014470,1556028,320-020-516,500-M18 IM,Distance fail,Insulation tape misaligned,"Incorrectly positioned shield & insulation tape, DMO has not specified the gap between ferrite and insulation tape.",10,True
+CC-25014471,1556028,320-020-516,500-M18 IM,Distance fail,Insulation tape misaligned,Incorrectly positioned shield & insulation tape (DMO has not specified the gap between ferrite and insulation tape) possible sub assembly cutting machine settings deviation,10,True
+CC-260511782,1654362,320-020-516,500-M18 IM,Distance fail,Further investigation under FA,Root cause unclear - Suspect PCBA or parameter issue,5,True
+CC-260511793,1658329,320-020-516,500-M18 IM,Other,Further investigation under FA,Root cause unclear - Suspect PCBA or parameter issue,5,False
+CC-260913329,1664883,320-020-516,500-M18 IM,Distance fail,Gap between ferrite and pallet,Identified Loctite 480 issue causing weak bonding of ferrite to front cap.,10,True
+CC-260913527,1684852,320-020-516,500-M18 IM,Parameter fail,Further investigation under FA,Root cause unclear -,17,True
+CC-25012472,1492834,330-020-440,500-M30 IC,No power,Flex damage,"Wrong bending method caused damages, lack of attention to the flex cable bending process",2,True
+CC-25012289,1488086,330-020-417,500-M30 IC,No power,Cable removed with solder pad,Possible cause - excess stress during pulling the cable sheath to edge,2,True
+CC-25012291,1488086,330-020-417,500-M30 IC,No power,Cable removed with solder pad,Possible cause - Excess stress applied on cable solder joint when closing rear cap,2,True
+CC-25012290,1488086,330-020-417,500-M30 IC,No power,Cable removed with solder pad,Possible cause - excess stress during pulling the cable sheath to edge,2,True
+CC-25013099,1518550,330-020-440,500-M30 IC,Function failure,ASIC loose,Suspected lack of solder bond between ASIC balls and solder pads of PCBA,11,True
+CC-25012977,1511379,330-020-440,500-M30 IC,Function failure,ASIC loose,Suspected lack of solder bond between ASIC balls and solder pads of PCBA,6,True
+CC-25068204,1598774,330-020-446,500-M30 IC,Distance fail,Gap between front cap and ferrite.Potting layer filled.,Adhesion issue of loctite 480(Loctite 480 visible in front cap and ferrite),9,True
+CC-24121599,1569810,330-020-356,500-M8 IC,Distance fail,Gap between ferrite and front cap,Lack of adhesion between cap and ferrite by loctite 480.(Glue is visible in Cap),6,True
+CC-24121696,1570278,330-020-357,500-M8 IC,Distance fail,Gap between front cap and ferrite,Adhesion issue of loctite 480(Loctite 480 visible in front cap),6,True
+CC-24121709,1568761,330-020-359,500-M8 IC,Distance fail,Gap between front cap and ferrite,Adhesion issue of loctite 480 (Loctite 480 visible in front cap),4,True
+CC-24121712,1566436,330-020-357,500-M8 IC,Distance fail,Gap between ferrite and front cap,Lack of adhesion between cap and ferrite by loctite 480.,5,True
+CC-25012429,1484082,330-020-072,500-M8 IC,Eeprom fail,LED damaged,Not heated both PCB pad and LED lead-soldering skill issue,2,True
+CC-25011918,1479033,330-020-073,500-M8 IC,No power,Flex PCB damaged from solder points,Possible root cause-Using wrong solder bit size and temperature,3,True
+CC-25012413,2005306,330-010-075,500-M8 IC,No power,Flex damage,Not checked if flex PCBA is stuck with housing due to potting and heat if needed,2,True
+CC-25012736,1496942,330-020-059,500-M8 IC,Distance fail,Gap between ferrite and front cap,"Improper glue dispensing, Improper inserting of cap or possible lack of time on magnet tool",4,True
+CC-25013173,1518399,330-020-357,500-M8 IC,Function failure,ASIC loose,Suspected lack of solder bond between ASIC balls and solder pads of PCBA,12,True
+CC-25011916,1479033,330-020-073,500-M8 IC,No power,Flex PCB damaged from solder points,Possible root cause-Using wrong solder bit size and temperature,3,True
+CC-25014061,1550386,330-020-359,500-M8 IC,Distance fail,Gap between ferrite and front cap,Suspected lack of adhesion between cap and ferrite by loctite 480.(Glue is visible in Cap),13,True
+CC-25012477,1485301,330-020-073,500-M8 IC,Function failure,Flex LED damaged,"Possibility to damge the LED solder joint due to incoming material issue (700-100-008, due to shifted solder joint from the flex solder PAD) and uneven soldering followed by assembly or potting excess bending due to handling",2,True
+CC-25012476,1485301,330-020-073,500-M8 IC,Function failure,ASIC loose,Suspected material issue with lack of strength of soldering strength between solder balls in the IC and PCAB pads,3,True
+CC-25013683,2011805,330-010-085,500-M8 IC,No sense,LED not lightup,No method of testing to check the LED light up after flex bending in assembly,6,True
+CC-25014455,1562412,330-020-359,500-M8 IC,Distance fail,Gap between ferrite and front cap,Adhesion issue between ferrite and cap by loctite 480. (Glue is visible in Cap),4,True
+CC-25012475,1485940,330-020-077,500-M8 IC,Function failure,Flex LED damaged,Material issue identified on the solder joint of the LED on Flex PCB,3,True
+CC-25011951,2003136,330-010-087,500-M8 IC,No power,Flex damage,Wrong flex PCB bending,2,True
+CC-25012441,1485260,330-020-073,500-M8 IC,No power,Flex damage from solder pad,Done by a training operator,2,True
+CC-25012717,1499317,330-020-077,500-M8 IC,High current,Coil touch with solder joint,Excess solder on the solder joint between round pcb and other pcb-lack of soldering skills-Operator was under training,4,True
+CC-25013898,1532892,330-020-076,500-M8 IC,No sense,LED not lightup,"LED disassembled from solder pad and lifted, Suspected tension on the felx PCB during handling or bending to remove the LED from solder pad",3,True
+CC-25012062,2004766,330-010-085,500-M8 IC,Always on,High coil resistance with out visible coil damage,Possbile root cause - coil mixup or handling damages during assembly & material preparation,6,True
+CC-25012251,2004882,330-010-085,500-M8 IC,Function failure,Flex damage,"Used unskilled operator without an ongoing training, 821",3,True
+CC-25013100,1514477,330-020-359,500-M8 IC,Distance fail,Gap between ferrite and front cap,Suspected lack of adhesion property of loctite 480,5,True
+CC-25014062,1548566,330-020-073,500-M8 IC,Insulation fail,Excess solder,"Excess solder in shield soldering pad, process deviation, operator under training",3,True
+CC-25012741,1503152,330-020-077,500-M8 IC,Insulation fail,Insulation tape damage,Due to shear stress between housing and tape,1,True
+CC-25012420,1485209,330-020-077,500-M8 IC,Always on,Coil elementhal wire damage,"Possible dimension issue of the material as observed by production staff and during inserting to ferrite, coil wires get scratched & strands expanded",3,True
+CC-25012243,2004883,330-010-085,500-M8 IC,No power,Flex damage,"Using unskilled operator in the process, 821",3,True
+CC-25012474,1485940,330-020-077,500-M8 IC,No power,Flex damage,Wrong bending of flex PCB,3,True
+CC-25013141,1520194,330-020-051,500-M8 IC,No power,ASIC missing,Possible cause - Not tested in PLST tester to identify ASIC issue,4,True
+CC-25012742,1501503,330-020-077,500-M8 IC,Function failure,ASIC loose,"Suspected lack of solder bond between ASIC balls and solder pads of PCBA, Material supplier issue",2,True
+CC-25013101,1516030,330-020-358,500-M8 IC,Distance fail,Gap between ferrite and front cap,Suspected lack of adhesion property of loctite 480,2,True
+CC-25012063,2004766,330-010-085,500-M8 IC,Always on,High coil resistance with out visible coil damage,Possbile root cause - coil mixup or handling damages during assembly,6,True
+CC-25013869,2015472,330-010-085,500-M8 IC,Insulation fail,Flex damage,Flex PCBA burnt by solder tip,5,True
+CC-25012412,1485227,330-020-073,500-M8 IC,No power,Flex damage,Not checked if flex PCBA is stuck with housing due to potting and heat if needed,2,True
+CC-25012252,2004882,330-010-085,500-M8 IC,No power,Flex damage,"Used unskilled operator without an ongoing training, 821",3,True
+CC-25013142,1520194,330-020-051,500-M8 IC,Function failure,ASIC loose,Suspected lack of solder bond between ASIC balls and solder pads of PCBA,5,True
+CC-25011950,2003136,330-010-087,500-M8 IC,No power,Flex damage,Wrong flex PCB bending,2,True
+CC-25012242,2004883,330-010-085,500-M8 IC,Function failure,Flex damage,"Using unskilled operator in the process, 821",3,True
+CC-25013984,1542445,330-020-359,500-M8 IC,Insulation fail,Solder contact with housing,"Excess solder, process deviation during soldering",5,True
+CC-25012445,1484724,330-020-076,500-M8 IC,Function failure,LED damaged,Improper flex bending during soldering,3,True
+CC-25012241,2004883,330-010-085,500-M8 IC,Insulation fail,Flex damage,"Using unskilled operator in the process, 821",2,True
+CC-25013926,1541994,330-020-072,500-M8 IC,Function failure,Flex damage,Over bending or soldering issue causes LED removeal,5,True
+CC-25013709,1527071,330-020-077,500-M8 IC,Function failure,Component damage,"R7 resistor damaged, suspected damage due high current spike, surge protection activated",1,True
+CC-25012444,1484724,330-020-076,500-M8 IC,Function failure,ASIC loose,Suspected material issue with lack of strength of soldering strength between solder balls in the IC and PCAB pads,6,True
+CC-25013693,2011838,330-010-085,500-M8 IC,No sense,LED not lightup,Suspected excess bending from assembly or potting operation,3,True
+CC-25011919,1479033,330-020-073,500-M8 IC,No power,Flex PCB damaged from solder points,Possible root cause-Using wrong solder bit size and temperature,3,True
+CC-25012253,2004882,330-010-085,500-M8 IC,No power,Flex damage,Lack of concentration of the operator,3,True
+CC-25012528,1493255,330-020-072,500-M8 IC,Function failure,ASIC loose,Suspected material issue with lack of strength of soldering strength between solder balls in the IC and PCAB pads,1,True
+CC-25012254,2004882,330-010-085,500-M8 IC,No power,Flex damage,Flex damage during reverse potting connector closing process,3,True
+CC-25012244,2004883,330-010-085,500-M8 IC,Insulation fail,Flex damage,Lack of concentration of the operator,2,True
+CC-25013868,2015472,330-010-085,500-M8 IC,No sense,LED damaged,"One end of LED lifted from flex PCBA path, suspected incoming material issue",25,True
+CC-25011917,1479033,330-020-073,500-M8 IC,No power,Flex PCB damaged from solder points,Lack of solder skills,3,True
+CC-25012414,2005306,330-010-075,500-M8 IC,No sense,LED damaged,Improper flex bending caused LED damage,7,True
+CC-25012440,1485260,330-020-073,500-M8 IC,Always on,Spreaded strands of coil wire,Poor qualify adhesive tape of coil causing coil wire to slip below the edge of the bobbin,3,True
+CC-25012300,1488174,330-020-359,500-M8 IC,Insulation fail,Flex damage,Flex inserting error to housing,8,True
+CC-25012487,1485918,330-020-073,500-M8 IC,Function failure,Flex LED damaged,Wrong bendling of flex PCB,3,True
+CC-25013900,1532892,330-020-076,500-M8 IC,No sense,LED not lightup,"LED disassembled from solder pad and lifted, Suspected tension on the felx PCB during handling or bending to remove the LED from solder pad",3,True
+CC-25012529,1493255,330-020-072,500-M8 IC,Function failure,ASIC loose,Suspected material issue with lack of strength of soldering strength between solder balls in the IC and PCAB pads,7,True
+CC-25012428,1484082,330-020-072,500-M8 IC,Always on,Coil partially damage (resistance value is high),Inserted a wrong coil wire positioned coil to ferrite,4,True
+CC-25012255,2004882,330-010-085,500-M8 IC,No power,Flex damage,Lack of concentration of the operator,3,True
+CC-25012319,1488772,330-020-065,500-M8 IC,Function failure,ASIC loose,"Under investigation by PE, QM & HQ",3,True
+CC-25012446,1484724,330-020-076,500-M8 IC,Function failure,LED damaged,Improper flex bending during soldering,3,True
+CC-25014065,1548566,330-020-073,500-M8 IC,Insulation fail,Solder contact with housing,Not done the intermediate test(Isolation Test) during 2nd potting operation,3,True
+CC-25014006,1532565,330-020-359,500-M8 IC,Distance fail,Gap between ferrite and front cap,Lack of adhesion between cap and ferrite by loctite 480.(Glue is visible in Cap),5,True
+CC-25012425,1486304,330-020-072,500-M8 IC,Function failure,LED damaged,Investigate under a NC,4,True
+CC-25012544,1496042,330-020-359,500-M8 IC,High current,Suspected ASIC issue or ASIC bridge,Possible cause - Solder bridge under ASIC or other ASIC issue,4,True
+CC-25013681,2011805,330-010-085,500-M8 IC,No sense,LED not lightup,"Marginal disconnection on flex LED solder pad, suspected excess bending from assembly, no method to test the functionality of LED due to untested PCBAs",6,True
+CC-25013027,1505788,330-020-359,500-M8 IC,Insulation fail,Insulation tape damage,Possible root cause - reduced thickness of the insulation tape,2,True
+CC-25012710,2007308,330-010-085,500-M8 IC,No power,ASIC loose,"Suspected lack of solder bond between ASIC balls and solder pads of PCBA, Material supplier issue",5,True
+CC-25012718,1499317,330-020-077,500-M8 IC,No power,Flex damage,"Improper PUR potting and attach Flex PCB to housing, lack of skills, operator was under training",3,True
+CC-25012892,1510060,330-020-077,500-M8 IC,Function failure,ASIC loose,Suspected material issue with lack of strength of soldering strength between solder balls in the IC and PCAB pads,9,True
+CC-25014029,1535677,330-020-357,500-M8 IC,Distance fail,Gap between ferrite and front cap,Lack of adhesion between cap and ferrite by loctite 480.(Glue is visible in Cap),4,True
+CC-25014508,2020838,330-010-085,500-M8 IC,No sense,Flex LED damaged,Excess stress on fled LED during handling from potting due to stacking method of sensors on the sponge trays,5,True
+CC-25013867,2015472,330-010-085,500-M8 IC,No sense,LED damaged,"One end of LED lifted from flex PCBA path, suspected incoming material issue",25,True
+CC-25014064,1548566,330-020-073,500-M8 IC,Insulation fail,Solder contact with housing,Not done the intermediate test(Isolation Test) during 2nd potting operation,3,True
+CC-25013143,1520194,330-020-051,500-M8 IC,No power,ASIC missing,Suspected lack of solder bond between ASIC balls and solder pads of PCBA,4,True
+CC-25013294,2012158,330-010-051,500-M8 IC,Function failure,ASIC loose,Suspected lack of solder bond between ASIC balls and solder pads of PCBA,14,True
+CC-25013293,1524819,330-020-048,500-M8 IC,Appearance issue,High Cap,"Process violation, not checked the CAP after pressing with tool as in DMO instructions",3,True
+CC-25013910,1542794,330-020-073,500-M8 IC,No sense,Coil damage,Suspected coil damage during soldering stage due to damage near to solder pad,5,True
+CC-25013958,1533162,330-020-359,500-M8 IC,Distance fail,Gap between ferrite and front cap,Lack of adhesion between cap and ferrite by loctite 480.(Glue is visible in Cap),7,True
+CC-25013870,2015472,330-010-085,500-M8 IC,No sense,LED damaged,"Improper LED soldering to flex PCBA path, suspected incoming material issue",9,True
+CC-25013682,2011805,330-010-085,500-M8 IC,No sense,LED not lightup,Suspected flex damage near LED solder pads at the assembly due to marginal excess bending-No information in assembly for bending the flex PCBA near the LED,6,True
+CC-25013727,1527772,330-020-077,500-M8 IC,No power,Flex damage,Flex damaged near connector side during Connector torque testing-Lack of UV bonding of S8 connector-process deviation,1,True
+CC-25013871,2015472,330-010-085,500-M8 IC,No sense,LED damaged,"One end of LED lifted from flex PCBA path, suspected incoming material issue",25,True
+CC-25013899,1532892,330-020-076,500-M8 IC,No sense,LED not lightup,"LED disassembled from solder pad and lifted, Suspected tension on the felx PCB during handling or bending to remove the LED from solder pad",3,True
+CC-25013680,2011805,330-010-085,500-M8 IC,No sense,LED not lightup,No method of testing to check the LED light up after flex bending in assembly,6,True
+CC-25013684,2011805,330-010-085,500-M8 IC,No sense,LED not lightup,"Marginal disconnection on flex LED solder pad, suspected excess bending from assembly, no method to test the functionality of LED due to untested PCBAs",6,True
+CC-25013694,2011838,330-010-085,500-M8 IC,No sense,LED not lightup,Suspected excess bending from assembly or potting operation,3,True
+CC-25013901,1532892,330-020-076,500-M8 IC,No sense,LED not lightup,"LED disassembled from solder pad and lifted, Suspected tension on the felx PCB during handling or bending to remove the LED from solder pad",3,True
+CC-25013894,1533456,330-020-077,500-M8 IC,No sense,Flex damage,"PUR stuck between flex PCBA and housing, not checked if flex PCBA is attached to housing by PUR, operator was under training",7,True
+CC-25013985,1542445,330-020-359,500-M8 IC,Distance fail,Gap between ferrite and front cap,Lack of adhesion between cap and ferrite by loctite 480.(Glue is visible in Cap),6,True
+CC-25014422,1558104,330-020-072,500-M8 IC,No sense,Flex damage,"Excess stress on LED solder pad during flex pcb bending process, Done by a trainee operator",11,True
+CC-25035039,1584147,330-020-357,500-M8 IC,Distance fail,Gap between ferrite and front cap,Lack of adhesion between cap and ferrite by loctite 480.,6,True
+CC-25035209,1584290,330-020-357,500-M8 IC,Distance fail,Excess glue in front cap glueing,"Lack of attention during front cap glueing, Excess glue applied",16,True
+CC-25047650,1589254,330-020-076,500-M8 IC,No sense,Cathode side of the LED removed from flex pcb with solderpad,Excess solder on the solder joint. LED path damaged due to excess heat.,7,True
+CC-25047696,1590145,330-020-073,500-M8 IC,No power,PCB damage,Excess force applied to PCBA during inserting due to transparent potting overflow issue. PCB can be damage.,6,True
+CC-25047809,1590106,330-020-357,500-M8 IC,Distance fail,Gap between front cap and ferrite due to excess glue applied,Lack of attention during front cap glueing.Not followed DMO instructions carefully,27,True
+CC-25057968,1593615,330-020-357,500-M8 IC,Distance fail,Components peel off,Components peel off on the PCB.,2,True
+CC-25057987,1593693,330-020-051,500-M8 IC,Always on,High coil resistance,Not correctly position coil wires according to the DMO. So coil can be damage. So coil resistance high.,6,True
+CC-25068171,1598659,330-020-072,500-M8 IC,No sense,Flex LED anode not soldered + Solder poor wetting,"Soldering not accepted. Lack of attention in soldering LED in sub-asembly process, Not done the intermediate test.",11,True
+CC-25068175,1598772,330-020-357,500-M8 IC,Distance fail,Excess glue in front cap glueing,Lack of attention during front cap glueing.Glue applied both center and edge of the ferrite.Excess glue is visible on the side of the shield.Not followed DMO instructions,2,True
+CC-25068343,1602202,330-020-076,500-M8 IC,Always on,High coil resistance,"Suspected assemble the part holder, tool issue coil strands can be damage.",8,True
+CC-25068359,2030095,330-010-085,500-M8 IC,Always on,High coil resistance,Coil strands damaged. Root cause unclear.Need further investigate,12,True
+CC-25068375,1601245,330-020-051,500-M8 IC,Always on,High coil resistance,"Suspected assemble the part holder, tool issue coil strands can be damage.",7,True
+CC-25078442,1603886,330-020-359,500-M8 IC,Distance fail,Gap between ferrite and front cap,Suspected Adhesion issue between ferrite and cap by loctite 480.,10,True
+CC-25078475,2030096,330-010-085,500-M8 IC,Always on,High coil resistance,Suspected incoming material issue. (Coil strands damage),14,True
+CC-25078714,1610172,330-020-359,500-M8 IC,Distance fail,Gap between ferrite and front cap,Suspected adhesion issue of Loctite 480.,6,True
+CC-25088943,1614897,330-020-359,500-M8 IC,Distance fail,Gap between front cap and ferrite,Root cause unclear.Need further investigate,13,True
+CC-25099008,1615292,330-020-073,500-M8 IC,No power,PCB damage,"PCB damage, incorrect position pushing PCB in housing 1st potting step or not correctly insert PCB in the housing (insert by rocking gently) or excess force apply pressing step in 2nd potting step.",9,True
+CC-25099009,1615293,330-020-077,500-M8 IC,No power,PCB damage,"PCB damage, incorrect position pushing PCB in housing 1st potting step or not correctly insert PCB in the housing (insert by rocking gently) or excess force apply pressing step in 2nd potting step.",16,True
+CC-25109422,1621412,330-020-358,500-M8 IC,Distance fail,Gap between front cap and ferrite,"Possible magnetic tool strength issue, caused poor bonding between ferrite and front cap.",2,True
+CC-25109462,1612941,330-020-356,500-M8 IC,Distance fail,Shield low level and not correctly solder shield.,Not correctly shield solder and position according to the GB.,90,True
+CC-260110442,1639875,330-020-359,500-M8 IC,Distance fail,Gap between ferrite and front cap,Front cap not fit firmly to sensor head after added Loctite 480 on ferrite and not checked.,11,True
+CC-260210677,1644415,330-020-076,500-M8 IC,No sense,Eeprom 7015 - Coil damage,Suspected that the coil damage occurs during a rework attempt,16,True
+CC-260311201,1649876,330-020-059,500-M8 IC,Distance fail,Gap between ferrite and front cap,"Possible Loctite 480 issue, caused poor bonding between ferrite and front cap OR magnetic tool strength issue.",7,True
+CC-260411355,1647168,330-020-359,500-M8 IC,Distance fail,Gap between front cap and ferrite,"Possible Loctite 480 issue, caused poor bonding between ferrite and front cap OR magnetic tool strength issue.",16,True
+CC-260411435,1648492,330-020-359,500-M8 IC,Eeprom fail,"Eeprom 7026 - Gap between front cap and ferrite, Ferrite broken and pushed further","Possible magnetic tool strength issue, caused poor bonding between ferrite and front cap.",6,True
+CC-260411516,1649223,330-020-357,500-M8 IC,Eeprom fail,Eeprom 7026 - Gap between shield end and the ferrite,Shield width is low to fulfill the DMO requirement.,7,True
+CC-260411522,1653723,330-010-085,500-M8 IC,Always on,High coil resistance,Coil strands damaged.,8,True
+CC-260411639,1652761,330-020-356,500-M8 IC,Distance fail,Excess glue applied on ferrite,Excess glue applied on ferrite. Glue dispensing amount not controlled.,10,True
+CC-260411648,1652762,330-020-356,500-M8 IC,Distance fail,Gap between ferrite and front cap,Excess glue amount applied on ferrite. Unable to control it manually.,13,True
+CC-260511714,1653994,330-020-073,500-M8 IC,No power,Flex PCB Damaged,Possible flex PCB damaged by the folding point when inserting the PCB in to the Housing. '7' shaped bending is not effectively maintained with manual formation method.,6,True
+CC-260511878,1657612,330-020-073,500-M8 IC,No sense,LED partially Detached from flex PCB with solder pad.,Possible LED damaged due to incorrect flex PCB bending,17,True
+CC-260612315,1667747,330-020-359,500-M8 IC,Eeprom fail,Further investigation under FA,Root cause to be defined,10,True
+CC-260612393,2041716,330-010-085,500-M8 IC,No sense,Solder Bridge between Flex PCB solder points,FA suspected root cause – Applied excess tin to the soldering points or lack of attention when soldering Flex PCB,11,True
+CC-260712578,1670935,330-020-051,500-M8 IC,Always on,Eeprom 7015 - Coil damage,Possible coil damaged when separating the coil wires due to raw material issue (coil wires too close),5,True
+CC-260712713,1671346,330-020-076,500-M8 IC,Distance fail,Gap between ferrite and front cap,FA Suspected root cause- High glue applied on ferrite.,109,True
+CC-260812934,2043195,330-010-085,500-M8 IC,Always on,Eeprom 7015 - Coil damage,Coil damage possible while separating the coil wires in assembly process. Suspected raw material issue (coil wires too close).,7,True
+CC-260813009,1677635,330-020-072,500-M8 IC,Eeprom fail,Eeprom 7022 - Component damage,Possible component damage due to high current. Current value not checked.,6,True
+CC-260913263,1682220,330-020-059,500-M8 IC,Eeprom fail,Eeprom 7022 - Component damaged,Possible raw material issue OR damaged during assembly process,2,True
+CC-260913428,2044301,330-010-085,500-M8 IC,No sense,Eeprom 7022 - Flex PCB damage,Possible flex damaged when bending near the solder point during handling or poor bending procedure.,6,True
