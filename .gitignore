@@ -1,11 +1,24 @@
-# --- Confidential data: never commit real production data ---
+# --- Confidential data: never commit real, unsanitized production data ---
 data/raw/*
 !data/raw/.gitkeep
+
+# --- Sanitized / derived data: OK to publish ---
+# data/raw_public/ holds sanitized copies of the raw FT/PO/FAR files,
+# produced by src/sanitize_ft_files.py, which strips SharePoint/author
+# metadata and internal Salesforce CRM hyperlinks. Verified to have
+# byte-identical cell data to the originals.
+# data/processed/ holds the CSVs the pipeline scripts generate
+# (usable_far_rows.csv, labeled_units.csv, etc.) -- no file metadata,
+# just extracted/derived numeric and text fields.
 data/processed/*
 !data/processed/.gitkeep
+!data/processed/*.csv
+
 *.xlsx
 *.xls
 !data/sample/*.xlsx
+!data/raw_public/**/*.xlsx
+
 root_cause_records*
 *confidential*
 
