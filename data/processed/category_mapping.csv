@@ -1,0 +1,82 @@
+root_cause_category,count,assigned_family
+Gap between ferrite and front cap,275,Dimensional / Alignment
+ASIC loose,176,ASIC / EEPROM
+Shield low level and not correctly solder shield.,90,Dimensional / Alignment
+High coil resistance,87,Coil
+Flex damage,83,Flex / PCB / Solder / Wiring
+Ferrite not centered within the Front cap & Shield,48,Dimensional / Alignment
+Coil damage,45,Coil
+Gap between front cap and ferrite,35,Dimensional / Alignment
+Shield misaligned,27,Dimensional / Alignment
+Eeprom 7015 - Coil damage,25,Coil
+Distance measurement fails,24,Dimensional / Alignment
+Gap between front cap and ferrite due to excess glue applied,24,Dimensional / Alignment
+Ferrite crack,23,Dimensional / Alignment
+Coil wire bridge with ground pad,17,Coil
+Eeprom 7026 - Excessive Gap between two shield ends,17,Dimensional / Alignment
+Excess glue in front cap glueing,17,Dimensional / Alignment
+Flex PCB bridge from solder pads,16,Flex / PCB / Solder / Wiring
+Shield misalignment,15,Dimensional / Alignment
+Trimming Failure,15,Dimensional / Alignment
+Excess loctite on coil & front cap not fitted properly,14,Dimensional / Alignment
+Flex PCB damaged from solder points,12,Flex / PCB / Solder / Wiring
+High coil resistance with out visible coil damage,12,Coil
+PCB damage,12,Flex / PCB / Solder / Wiring
+Solder contact with housing,11,Insulation / Isolation
+Excess glue applied on ferrite,10,Dimensional / Alignment
+Solder Bridge between Flex PCB solder points,10,Flex / PCB / Solder / Wiring
+Trimming Failure due to flex removed from solderpad,10,Dimensional / Alignment
+Eeprom 7026 - High gap between two shield ends,9,Dimensional / Alignment
+Gap between ferrite and pallet,9,Dimensional / Alignment
+Gap between front cap and ferrite.Potting layer filled.,9,Dimensional / Alignment
+ASIC missing,8,ASIC / EEPROM
+Coil partially damage (resistance value is high),8,Coil
+IDistUnom fail - Solder Bridge between Flex PCB solder points,8,Flex / PCB / Solder / Wiring
+Eeprom 7026 - No Mechanical Deviation Found,7,ASIC / EEPROM
+Flex bridge,7,Flex / PCB / Solder / Wiring
+ferrite not centered,7,Dimensional / Alignment
+ASIC peal off from PCB,6,ASIC / EEPROM
+Cable removed with solder pad,6,Flex / PCB / Solder / Wiring
+Eeprom 7026 - Gap between shield end and the ferrite,6,Dimensional / Alignment
+Gap between shield ends high and ferrite note centered.,6,Dimensional / Alignment
+Eeprom 7022 - ASIC Loose,5,ASIC / EEPROM
+Eeprom 7026 - ferrite not centered,5,Dimensional / Alignment
+Gap between ferrite and Front cap,5,Dimensional / Alignment
+Improper connection of test cable,5,Flex / PCB / Solder / Wiring
+LED not lightup,5,LED
+Trimming failure,5,Dimensional / Alignment
+Wire detached from the solder joint/ Some pcs are retested and passed,5,Flex / PCB / Solder / Wiring
+Cable and sensor pushed out of the sensor,4,Flex / PCB / Solder / Wiring
+Coil touch with solder joint,4,Coil
+Eeprom 7022 - Flex PCB damage,4,ASIC / EEPROM
+Flex bridged with excess solder,4,Flex / PCB / Solder / Wiring
+Gap between front cap & ferrite,4,Dimensional / Alignment
+High Coil Resistance,4,Coil
+LED damaged,4,LED
+Suspected ASIC issue or ASIC bridge,4,ASIC / EEPROM
+ASIC bridge,3,ASIC / EEPROM
+ASIC heated,3,ASIC / EEPROM
+"ASIC loose, ASIC missing",3,ASIC / EEPROM
+Blue wire detached from the PCB with solder pad,3,Flex / PCB / Solder / Wiring
+Coil elementhal wire damage,3,Coil
+Eeprom 7014 - excess glue amount on ferrite,3,Dimensional / Alignment
+Eeprom 7022 - Component damage,3,ASIC / EEPROM
+Eeprom 7022 - Flex PCB shortned,3,ASIC / EEPROM
+Excess solder,3,Flex / PCB / Solder / Wiring
+Ferrite cracked,3,Dimensional / Alignment
+Insulation tape damage,3,Insulation / Isolation
+PCBA damage,3,Flex / PCB / Solder / Wiring
+Spreaded strands of coil wire,3,Coil
+Eeprom 7026 - Ferrite not centered within the Front cap / Shield misalignment,2,Dimensional / Alignment
+"Eeprom 7026 - Gap between front cap and ferrite, Ferrite broken and pushed further",2,Dimensional / Alignment
+Excess glue amount on PCBA components.,2,Gluing / Potting Process
+Flex damage from solder pad,2,Flex / PCB / Solder / Wiring
+Glue over the PCBA Components,2,Gluing / Potting Process
+Low cap,2,Dimensional / Alignment
+Shield contact with housing,2,Dimensional / Alignment
+Cable removed from PCBA,1,Flex / PCB / Solder / Wiring
+Eeprom 7022 - Component damaged,1,ASIC / EEPROM
+High Cap,1,Dimensional / Alignment
+High cap,1,Dimensional / Alignment
+Potting layer in between ferrite and front cap,1,Dimensional / Alignment
+Solder on insulation tape,1,Insulation / Isolation
