@@ -1,0 +1,14 @@
+                              precision    recall  f1-score   support
+
+               ASIC / EEPROM       0.54      0.80      0.64        44
+                        Coil       0.66      0.77      0.71        43
+     Dimensional / Alignment       0.93      1.00      0.96       151
+Flex / PCB / Solder / Wiring       0.00      0.00      0.00        34
+                         LED       0.00      0.00      0.00         0
+       Other / Minor Defects       0.00      0.00      0.00         6
+
+                    accuracy                           0.79       278
+                   macro avg       0.36      0.43      0.39       278
+                weighted avg       0.69      0.79      0.74       278
+
+Macro F1: 0.386
