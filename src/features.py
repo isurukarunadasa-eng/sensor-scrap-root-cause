@@ -38,10 +38,25 @@ labeled_units.csv (and its train/test split) has 4 kinds of columns:
 Missing values
 ---------------
 A blank cell means that parameter was skipped ("--") for that unit during
-the FT run (not every parameter applies to every article/test program).
-These are median-imputed per column. Imputation statistics are fit on the
-TRAIN split only and then applied to the test split, so no information
-about the test set's own distribution leaks into training.
+the FT run. For the 0/1 calibration flags this is NOT noise: the tester
+aborts its calibration sequence at the first error, so a blank means "the
+sequence never got this far" -- the strongest predictive signal in the data
+(see rules_baseline.py). Median imputation alone would erase it, so before
+imputing, this module adds:
+
+  * <column>__missing  -- 1 if that column was blank, 0 otherwise, for every
+                          column that has at least one blank in the TRAIN
+                          split (the column set is fixed from train only).
+  * chain_depth         -- how many steps of the calibration sequence
+                          (CHAIN_ORDER) were reached in a row before the
+                          first blank: 0 = nothing reached ... 10 = all.
+
+These are raw properties of the FT export (available for a brand-new unit at
+inference time), so they are not leaky like severity_score.
+
+Remaining blanks are then median-imputed per column. Imputation statistics
+are fit on the TRAIN split only and applied to the test split, so no
+information about the test set's own distribution leaks into training.
 
 Usage
 -----
@@ -73,6 +88,15 @@ NON_FEATURE_COLUMNS = {
     # leaky: derived FROM the label via parser.py's category-matching logic
     "severity_score", "n_flagged_params", "flagged_params", "flagged_params_matched",
 }
+
+# Execution order of the CTX510 calibration sequence, derived empirically from
+# train data (same order as rules_baseline.TEST_ORDER; TestIsolation is
+# excluded because it runs independently of the chain).
+CHAIN_ORDER = [
+    "IcPreconfig [0/1]", "5V4trim [0/1]", "TemperatureComp [0/1]",
+    "CalibrSP1Hys [0/1]", "CalibrSP1 [0/1]", "CalibrSP2Hys [0/1]", "CalibrSP2 [0/1]",
+    "CalibrSP3Hys [0/1]", "CalibrSP3 [0/1]", "YellowLed [0/1]",
+]
 
 LABEL_COLUMN = "model_target"
 GROUP_COLUMN = "PO"
@@ -144,6 +168,47 @@ def build_feature_matrix(train_path: str, test_path: str):
     train_raw, y_train, groups_train = extract(train_rows)
     test_raw, y_test, groups_test = extract(test_rows)
 
+    col_idx_of = {c: i for i, c in enumerate(feature_names)}
+
+    # Columns that get a __missing indicator: any column with >=1 blank in TRAIN.
+    # Columns whose blank-pattern is IDENTICAL across all train rows (they are
+    # skipped together by the same test-program abort) would just be duplicate
+    # features and split SHAP credit between copies, so only the first column
+    # of each identical group is kept; the others are recorded in
+    # INDICATOR_GROUPS so the grouping stays traceable.
+    seen_patterns = {}
+    missing_cols = []
+    indicator_groups = {}
+    for c in feature_names:
+        pattern = tuple(row[col_idx_of[c]] is None for row in train_raw)
+        if not any(pattern):
+            continue
+        if pattern in seen_patterns:
+            indicator_groups[seen_patterns[pattern]].append(c)
+        else:
+            seen_patterns[pattern] = c
+            missing_cols.append(c)
+            indicator_groups[c] = [c]
+
+    def chain_depth(raw_row):
+        depth = 0
+        for c in CHAIN_ORDER:
+            if c not in col_idx_of or raw_row[col_idx_of[c]] is None:
+                break
+            depth += 1
+        return depth
+
+    def indicators(raw):
+        return [
+            [1.0 if row[col_idx_of[c]] is None else 0.0 for c in missing_cols]
+            + [float(chain_depth(row))]
+            for row in raw
+        ]
+
+    indicator_names = [f"{c}__missing" for c in missing_cols] + ["chain_depth"]
+    # Exposed for the CLI printout.
+    build_feature_matrix.indicator_groups = indicator_groups
+
     # Fit per-column medians on TRAIN only.
     medians = []
     for col_idx in range(len(feature_names)):
@@ -156,8 +221,10 @@ def build_feature_matrix(train_path: str, test_path: str):
             for row in raw
         ]
 
-    X_train = impute(train_raw)
-    X_test = impute(test_raw)
+    # Indicators are computed from the RAW (pre-imputation) rows.
+    X_train = [a + b for a, b in zip(impute(train_raw), indicators(train_raw))]
+    X_test = [a + b for a, b in zip(impute(test_raw), indicators(test_raw))]
+    feature_names = feature_names + indicator_names
 
     return X_train, y_train, groups_train, X_test, y_test, groups_test, feature_names
 
@@ -186,10 +253,14 @@ def main():
     write(train_out, X_train, y_train, groups_train)
     write(test_out, X_test, y_test, groups_test)
 
-    print(f"{len(feature_names)} feature columns (raw FT parameters only -- "
-          f"no label-derived columns included):")
+    print(f"{len(feature_names)} feature columns (raw FT parameters + blank-pattern "
+          f"indicators; no label-derived columns included):")
     for c in feature_names:
         print(f"  {c}")
+    print("\nBlank-pattern indicator groups (each __missing column stands for every "
+          "column listed -- they were blank together in all train rows):")
+    for lead, members in build_feature_matrix.indicator_groups.items():
+        print(f"  {lead}__missing  <-  {members}")
     print(f"\nExcluded as identifiers/metadata/label-derived/leaky: "
           f"{sorted(NON_FEATURE_COLUMNS)}")
     print(f"\nTrain: {len(X_train)} rows -> {train_out}")
