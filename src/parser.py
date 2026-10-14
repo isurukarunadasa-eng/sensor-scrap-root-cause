@@ -124,6 +124,11 @@ CATEGORY_PARAM_RULES = [
     # broadest family, used as a fallback for this keyword group only
     (r"flex|pcb|solder|bridge|wire|cable",
      ["UDist", "IDist", "ILedOn", "eeprom_integrity"]),
+    # glue / adhesive defects act through the sensing distance (glue on the
+    # ferrite shifts it). Last on purpose: categories that already matched an
+    # earlier rule (e.g. "excess glue on ferrite") are unchanged.
+    (r"glu|loctite",
+     ["UDist", "IDist", "DistUnom", "HystUnom"]),
 ]
 
 

@@ -106,7 +106,7 @@ showed three clean clusters --
          thresholds for the continuous parameters
 
 That first pass used a small leftover 37-row sample. It was then REDONE on
-the real train_units.csv (1,094 rows -- diagnose_gap_patterns.py, run by
+the real train_units.csv (1,301 rows, rerun 2026-10-14 -- diagnose_gap_patterns.py, run by
 Isuru, 2026-10-07) and gave a cleaner, more important picture, with one
 real surprise:
 
@@ -118,25 +118,32 @@ real surprise:
   TEST_ORDER and used instead as a secondary split at the two zones where
   it mattered:
 
-  Zone "nothing in the core chain reached" (n=294 total):
-    TestIsolation reached  (n=30):  100% Dimensional/Alignment (all
-      "Trimming Failure") -- a completely different failure mode from...
-    TestIsolation NOT reached (n=264): 58.3% ASIC/EEPROM, 28.0% Flex/PCB/
-      Solder/Wiring, 13.6% Coil
+  Zone "nothing in the core chain reached" (n=404 total):
+    TestIsolation reached  (n=14):  100% Dimensional/Alignment (all
+      "Gap between ferrite and pallet" / "Trimming Failure") -- a completely
+      different failure mode from...
+    TestIsolation NOT reached (n=390): 64.4% ASIC/EEPROM, 26.7% Flex/PCB/
+      Solder/Wiring, 9.0% Coil
 
-  Zone "reached 5V4trim, gap before TemperatureComp" (n=725 total):
-    TestIsolation reached (n=506): 90.3% Dimensional/Alignment
-    TestIsolation NOT reached (n=219): 57.1% Coil, 20.1% Dimensional/
-      Alignment, 11.4% Flex/PCB/Solder/Wiring, 11.0% ASIC/EEPROM
+  Zone "reached 5V4trim, gap before TemperatureComp" (n=746 total):
+    TestIsolation reached (n=544): 90.6% Dimensional/Alignment
+    TestIsolation NOT reached (n=202): 57.9% Coil, 18.3% Dimensional/
+      Alignment, 11.9% Flex/PCB/Solder/Wiring, 11.4% ASIC/EEPROM
 
-  Zone "full 10-flag core chain completed" (n=61):
-    72.1% Dimensional/Alignment, 13.1% Insulation/Isolation, 8.2% LED,
-    6.6% Flex/PCB/Solder/Wiring
+  Zone "full 10-flag core chain completed" (n=113):
+    47.8% Gluing/Potting, 37.2% Dimensional/Alignment, 7.1% Insulation/
+    Isolation, 4.4% LED, 3.5% Flex/PCB/Solder/Wiring. (Was 72.1%
+    Dimensional/Alignment before the second PO batch added 51 glue units;
+    glue and ferrite/gap defects both act on the sensing distance, so this
+    zone is a weak, two-way call, not a clean one.)
 
-  Zone "gap after CalibrSP2" (n=12, too small/mixed for a confident call):
-    33.3% Flex/PCB/Solder/Wiring, 33.3% Coil, 25.0% ASIC/EEPROM, 8.3%
-    Gluing/Potting -- no majority; kept as a weak, explicitly low-
-    confidence guess
+  Zone "gap after CalibrSP2" (n=28): 42.9% Coil, 35.7% Flex/PCB/Solder/
+    Wiring, 17.9% ASIC/EEPROM, 3.6% Gluing/Potting -- plurality only; kept
+    as a weak, explicitly low-confidence guess
+
+  Zone "gap after CalibrSP3" (n=10, too small for a confident call):
+    TestIsolation reached (n=7): 57.1% Dimensional/Alignment, 42.9%
+    Insulation/Isolation; not reached (n=3): 66.7% Flex, 33.3% Coil
 
 These are MAJORITY-VOTE rules fit on train data, a third evidentiary tier
 ("data_majority") distinct from an xlsx-confirmed physical root cause
@@ -263,7 +270,7 @@ TEST_ORDER = [
 
 TEST_ISOLATION_COL = "TestIsolation [0/1]"
 
-# Data-majority gap rules, fit on train_units.csv (1,094 rows, 2026-10-07)
+# Data-majority gap rules, fit on train_units.csv (1,301 rows, 2026-10-14, after the second PO batch)
 # -- see module docstring for the full breakdown and purity percentages
 # behind each one. key = index in TEST_ORDER of the LAST step successfully
 # reached (-1 = nothing reached at all). Where TestIsolation reached/not
@@ -275,14 +282,14 @@ GAP_RULES = {
             "Dimensional / Alignment",
             "data_majority",
             "Core chain never started, but TestIsolation ran independently -- "
-            "100% of these (n=30 in train) are 'Trimming Failure'.",
+            "100% of these (n=14 in train) are ferrite-to-pallet / 'Trimming Failure'.",
         ),
         False: (
             "ASIC / EEPROM",
             "data_majority",
             "PRECONFIG (-7018) never reached and TestIsolation didn't run either "
-            "-- 58.3% ASIC/EEPROM in train (n=264), with 28.0% Flex/PCB/Solder/"
-            "Wiring and 13.6% Coil as notable minorities (mixed zone, not pure).",
+            "-- 64.4% ASIC/EEPROM in train (n=390), with 26.7% Flex/PCB/Solder/"
+            "Wiring and 9.0% Coil as notable minorities (mixed zone, not pure).",
         ),
     },
     1: {  # reached 5V4trim (index 1), stopped before TemperatureComp (index 2)
@@ -290,42 +297,57 @@ GAP_RULES = {
             "Dimensional / Alignment",
             "data_majority",
             "Stopped between 5V4trim and TemperatureComp, but TestIsolation ran "
-            "-- 90.3% Dimensional/Alignment in train (n=506).",
+            "-- 90.6% Dimensional/Alignment in train (n=544).",
         ),
         False: (
             "Coil",
             "data_majority",
             "Stopped between 5V4trim and TemperatureComp, TestIsolation didn't run "
-            "-- 57.1% Coil in train (n=219; matches -7015 VRCU_READING's documented "
+            "-- 57.9% Coil in train (n=202; matches -7015 VRCU_READING's documented "
             "root cause 'Coil damage / coil resistance', which runs in this gap but "
-            "has no dedicated FT column), with Dimensional/Alignment (20.1%), Flex/"
-            "PCB/Solder/Wiring (11.4%) and ASIC/EEPROM (11.0%) as minorities.",
+            "has no dedicated FT column), with Dimensional/Alignment (18.3%), Flex/"
+            "PCB/Solder/Wiring (11.9%) and ASIC/EEPROM (11.4%) as minorities.",
         ),
     },
     6: {  # gap after CalibrSP2 (index 6), before CalibrSP3Hys
         None: (
             "Coil",
             "hint",
-            "Gap after CalibrSP2 -- only n=12 in train, no clear majority "
-            "(Flex/PCB/Solder/Wiring 33.3%, Coil 33.3%, ASIC/EEPROM 25.0%, "
-            "Gluing/Potting 8.3%). Low-confidence tie-break toward Coil, "
+            "Gap after CalibrSP2 -- n=28 in train, plurality only "
+            "(Coil 42.9%, Flex/PCB/Solder/Wiring 35.7%, ASIC/EEPROM 17.9%, "
+            "Gluing/Potting 3.6%). Low-confidence pick of Coil, "
             "consistent with the broader finding that mid-sequence SPV "
             "calibration stalls tend to be coil-related.",
+        ),
+    },
+    8: {  # gap after CalibrSP3 (index 8), YellowLed blank -- tiny support
+        True: (
+            "Dimensional / Alignment",
+            "hint",
+            "Stopped after CalibrSP3 with TestIsolation reached -- only n=7 in "
+            "train: 57.1% Dimensional/Alignment (ferrite crack), 42.9% "
+            "Insulation/Isolation. Low-confidence plurality.",
+        ),
+        False: (
+            "Flex / PCB / Solder / Wiring",
+            "hint",
+            "Stopped after CalibrSP3, TestIsolation not reached -- only n=3 in "
+            "train (2 Flex, 1 Coil). Very low confidence.",
         ),
     },
 }
 
 # The "full chain completed" case (no gap at all) -- also a data-majority
-# call, not a shrug. n=61 in train, 72.1% Dimensional/Alignment (vs. 13.1%
-# Insulation/Isolation, 8.2% LED, 6.6% Flex/PCB/Solder/Wiring).
+# call, not a shrug. n=113 in train, 47.8% Gluing/Potting (vs. 37.2%
+# Dimensional/Alignment, 7.1% Insulation/Isolation, 4.4% LED, 3.5% Flex).
 FULL_CHAIN_PREDICTION = (
-    "Dimensional / Alignment",
+    "Gluing / Potting Process",
     "data_majority",
-    "Full CTX510 core calibration sequence completed (no gap) -- 72.1% of "
-    "these units in train (n=61) were still Dimensional/Alignment defects "
-    "(ferrite crack, gap/cap issues) caught by tests outside this flag "
-    "sequence; Insulation/Isolation (13.1%) and LED (8.2%) are notable "
-    "minorities.",
+    "Full CTX510 core calibration sequence completed (no gap) -- 47.8% of "
+    "these units in train (n=113) were Gluing/Potting defects, 37.2% "
+    "Dimensional/Alignment (ferrite crack, gap/cap issues). Both act on the "
+    "sensing distance, so this is a weak two-way call; Insulation/Isolation "
+    "(7.1%) and LED (4.4%) are minorities.",
 )
 
 

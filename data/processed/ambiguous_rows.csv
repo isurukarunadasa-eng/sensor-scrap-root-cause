@@ -1,9 +1,6 @@
 CC_reference,PO,article_no,root_cause_category,reason
-CC-25011779,2023103,330-010-010,Lack of gluing strength,"lot had flagged units, but none on a parameter consistent with this category (see CATEGORY_PARAM_RULES)"
 CC-25058056,1587592,330-020-017,Wrong PCBA assembled,"lot had flagged units, but none on a parameter consistent with this category (see CATEGORY_PARAM_RULES)"
-CC-25088942,2029373,330-027-000,Excess glue amount,"lot had flagged units, but none on a parameter consistent with this category (see CATEGORY_PARAM_RULES)"
 CC-25099235,2032946,330-027-000,Ferrite crack,"lot had flagged units, but none on a parameter consistent with this category (see CATEGORY_PARAM_RULES)"
-CC-25109524,1620305,330-020-017,Glue inside the connector,"lot had flagged units, but none on a parameter consistent with this category (see CATEGORY_PARAM_RULES)"
 CC-251210043,1631123,330-020-017,Excess potting,"lot had flagged units, but none on a parameter consistent with this category (see CATEGORY_PARAM_RULES)"
 CC-251210046,1631536,330-020-017,Insufficient Glue Coverage (on the LED),"lot had flagged units, but none on a parameter consistent with this category (see CATEGORY_PARAM_RULES)"
 CC-260110398,2036653,330-010-010,Ferrite crack,"lot had flagged units, but none on a parameter consistent with this category (see CATEGORY_PARAM_RULES)"
@@ -53,3 +50,5 @@ CC-25057968,1593615,330-020-357,Components peel off,"lot had flagged units, but 
 CC-25068171,1598659,330-020-072,Flex LED anode not soldered + Solder poor wetting,"lot had flagged units, but none on a parameter consistent with this category (see CATEGORY_PARAM_RULES)"
 CC-260511878,1657612,330-020-073,LED partially Detached from flex PCB with solder pad.,"lot had flagged units, but none on a parameter consistent with this category (see CATEGORY_PARAM_RULES)"
 CC-260612315,1667747,330-020-359,Further investigation under FA,"lot had flagged units, but none on a parameter consistent with this category (see CATEGORY_PARAM_RULES)"
+PO-1596090,1596090,755-006-574,Excess glue amount,"lot had flagged units, but none on a parameter consistent with this category (see CATEGORY_PARAM_RULES)"
+PO-2039598,2039598,330-027-085,Excess glue amount,"lot had flagged units, but none on a parameter consistent with this category (see CATEGORY_PARAM_RULES)"

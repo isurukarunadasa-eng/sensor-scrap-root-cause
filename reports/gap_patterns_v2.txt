@@ -1,0 +1,130 @@
+1301 rows from data/processed/train_units.csv
+Columns, in order (position 0..10): ['IcPreconfig [0/1]', '5V4trim [0/1]', 'TemperatureComp [0/1]', 'CalibrSP1Hys [0/1]', 'CalibrSP1 [0/1]', 'CalibrSP2Hys [0/1]', 'CalibrSP2 [0/1]', 'CalibrSP3Hys [0/1]', 'CalibrSP3 [0/1]', 'YellowLed [0/1]', 'TestIsolation [0/1]']
+
+9 distinct reach/no-reach patterns found.
+
+Pattern 11000000001  (544 rows, gap after reaching index 1 (5V4trim [0/1]))
+     198  Gap between ferrite and front cap
+      90  Shield low level and not correctly solder shield.
+      40  Ferrite not centered within the Front cap & Shield
+      27  Shield misaligned
+      24  Gap between front cap and ferrite due to excess glue applied
+      24  Distance measurement fails
+      21  Gap between front cap and ferrite
+      17  Excess glue in front cap glueing
+      15  Shield misalignment
+      14  Flex PCB bridge from solder pads
+      14  Excess loctite on coil & front cap not fitted properly
+      10  Excess glue applied on ferrite
+       7  Flex bridge
+       7  ferrite not centered
+       6  Cable removed with solder pad
+       6  IDistUnom fail - Solder Bridge between Flex PCB solder points
+       6  Gap between shield ends high and ferrite note centered.
+       5  Excess glue amount
+       4  Flex bridged with excess solder
+       2  Insulation tape damage
+       2  Blue wire detached from the PCB with solder pad
+       2  Flex damage
+       2  Insulation damage - contact with housing
+       1  Cable removed from PCBA
+
+Pattern 00000000000  (388 rows, gap at index 0 (nothing reached))
+     134  ASIC loose
+      61  Eeprom 7022 - LED damaged
+      45  Flex damage
+      31  PCBA damage
+      23  Wrong PCBA assembled - eeprom issue
+      10  High coil resistance
+       7  Coil partially damage (resistance value is high)
+       7  Solder Bridge between Flex PCB solder points
+       6  Coil damage
+       6  ASIC peal off from PCB
+       6  ASIC missing
+       6  High coil resistance with out visible coil damage
+       5  Eeprom 7022 - ASIC Loose
+       5  PCB damage
+       4  Flex bridged with excess solder
+       4  Coil wire bridge with ground pad
+       4  Flex PCB damaged from solder points
+       4  Eeprom 7022 - Flex PCB damage
+       3  Eeprom 7022 - Component damage
+       3  Eeprom 7022 - Flex PCB shortned
+       3  Wire detached from the solder joint/ Some pcs are retested and passed
+       2  Flex PCB bridge from solder pads
+       2  ASIC bridge
+       2  ASIC heated
+       2  Coil touch with solder joint
+       1  ASIC loose, ASIC missing
+       1  IDistUnom fail - Solder Bridge between Flex PCB solder points
+       1  Blue wire detached from the PCB with solder pad
+
+Pattern 11000000000  (202 rows, gap after reaching index 1 (5V4trim [0/1]))
+      59  High coil resistance
+      22  Coil damage
+      20  Eeprom 7015 - Coil damage
+      17  ASIC loose
+      17  Eeprom 7026 - Excessive Gap between two shield ends
+      13  Coil wire bridge with ground pad
+       9  Eeprom 7026 - High gap between two shield ends
+       8  Flex damage
+       6  Eeprom 7026 - Gap between shield end and the ferrite
+       5  Eeprom 7026 - ferrite not centered
+       4  Flex bridged with excess solder
+       4  Flex PCB damaged from solder points
+       3  PCBA damage
+       3  Solder Bridge between Flex PCB solder points
+       2  ASIC loose, ASIC missing
+       2  ASIC missing
+       2  High coil resistance with out visible coil damage
+       1  ASIC bridge
+       1  IDistUnom fail - Solder Bridge between Flex PCB solder points
+       1  PCB damage
+       1  ASIC heated
+       1  Coil touch with solder joint
+       1  Excess glue amount on PCBA components.
+
+Pattern 11111111111  (113 rows, no gap -- full sequence reached)
+      49  Excess glue amount
+      19  Ferrite crack
+      14  Gap between ferrite and front cap
+       6  Insulation damage - contact with housing
+       5  LED not lightup
+       5  Glue inside the connector
+       4  Gap between front cap & ferrite
+       4  Flex PCB damaged from solder points
+       2  Low cap
+       2  Shield contact with housing
+       1  Insulation tape damage
+       1  Solder on insulation tape
+       1  Potting layer in between ferrite and front cap
+
+Pattern 11111110100  (28 rows, gap after reaching index 6 (CalibrSP2 [0/1]))
+       6  Coil damage
+       4  ASIC loose
+       4  Flex damage
+       4  PCBA damage
+       4  High coil resistance with out visible coil damage
+       2  Wire detached from the solder joint/ Some pcs are retested and passed
+       1  Coil partially damage (resistance value is high)
+       1  Wrong PCBA assembled - eeprom issue
+       1  Coil touch with solder joint
+       1  Excess glue amount on PCBA components.
+
+Pattern 00000000001  (14 rows, gap at index 0 (nothing reached))
+       9  Gap between ferrite and pallet
+       5  Trimming Failure
+
+Pattern 11111111101  (7 rows, gap after reaching index 8 (CalibrSP3 [0/1]))
+       4  ferrite crack
+       3  Insulation damage - contact with housing
+
+Pattern 11111111100  (3 rows, gap after reaching index 8 (CalibrSP3 [0/1]))
+       1  PCBA damage
+       1  Flex damage
+       1  Coil damage
+
+Pattern 01000000000  (2 rows, gap at index 0 (nothing reached))
+       1  PCBA damage
+       1  ASIC loose
+
