@@ -1,0 +1,59 @@
+Merged class: 'ASIC / EEPROM' + 'Flex / PCB / Solder / Wiring' -> 'ASIC / Flex interface'
+Train 1301 rows / 176 POs, test 310 rows / 56 POs
+
+Test class counts (merged): {'Dimensional / Alignment': 140, 'ASIC / Flex interface': 107, 'Coil': 43, 'Insulation / Isolation': 11, 'Gluing / Potting Process': 5, 'Other / Minor Defects': 4}
+
+=== A. Baseline (rules), relabelled ===
+                          precision    recall  f1-score   support
+
+   ASIC / Flex interface       0.89      0.73      0.80       107
+                    Coil       0.52      0.77      0.62        43
+ Dimensional / Alignment       0.92      0.89      0.91       140
+Gluing / Potting Process       0.14      0.60      0.22         5
+  Insulation / Isolation       0.00      0.00      0.00        11
+   Other / Minor Defects       0.00      0.00      0.00         4
+
+                accuracy                           0.77       310
+               macro avg       0.41      0.50      0.42       310
+            weighted avg       0.79      0.77      0.77       310
+
+Macro F1: 0.424   Accuracy: 0.771
+
+=== B. Existing 7-class Random Forest, predictions relabelled ===
+                          precision    recall  f1-score   support
+
+   ASIC / Flex interface       0.87      0.73      0.79       107
+                    Coil       0.52      0.77      0.62        43
+ Dimensional / Alignment       0.90      0.89      0.90       140
+Gluing / Potting Process       0.33      0.60      0.43         5
+  Insulation / Isolation       1.00      0.73      0.84        11
+   Other / Minor Defects       0.00      0.00      0.00         4
+
+                accuracy                           0.80       310
+               macro avg       0.60      0.62      0.60       310
+            weighted avg       0.82      0.80      0.80       310
+
+Macro F1: 0.596   Accuracy: 0.797
+
+=== C. Random Forest retrained on merged labels ===
+                          precision    recall  f1-score   support
+
+   ASIC / Flex interface       0.88      0.73      0.80       107
+                    Coil       0.52      0.77      0.62        43
+ Dimensional / Alignment       0.88      0.91      0.90       140
+Gluing / Potting Process       0.20      0.20      0.20         5
+  Insulation / Isolation       1.00      0.64      0.78        11
+   Other / Minor Defects       0.00      0.00      0.00         4
+
+                accuracy                           0.80       310
+               macro avg       0.58      0.54      0.55       310
+            weighted avg       0.81      0.80      0.80       310
+
+Macro F1: 0.548   Accuracy: 0.797
+
+Summary (macro F1, merged 6-class view):
+  A baseline                   0.424
+  B 7-class RF, relabelled     0.596
+  C RF retrained on merged     0.548
+
+Note: not comparable as a leaderboard to the 7-class headline numbers (different number of classes). Secondary analysis only.
