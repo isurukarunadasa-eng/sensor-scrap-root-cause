@@ -201,7 +201,21 @@ def main():
         b_family, b_tier, b_why = rules_baseline.classify_unit(base_row)
         conf = float(proba[k][order[0]])
         agree = (classes[order[0]] == b_family)
-        review = conf < LOW_CONFIDENCE or not agree
+        # A unit whose ONLY tester flag is eeprom_integrity has no usable parameter
+        # evidence, and the model never saw that column (it is excluded from the
+        # features). Both methods then fall back on the calibration-sequence pattern,
+        # so their agreement is not independent confirmation. Always send to review.
+        only_flags = [p for p in r["flagged_params"].split(";") if p]
+        eeprom_only = bool(only_flags) and all(p.startswith("eeprom_integrity") for p in only_flags)
+        reasons = []
+        if conf < LOW_CONFIDENCE:
+            reasons.append(f"low confidence ({conf:.2f})")
+        if not agree:
+            reasons.append("methods disagree")
+        if eeprom_only:
+            reasons.append("flagged only by eeprom_integrity; no parameter evidence, "
+                           "likely ASIC / EEPROM, verify on the bench")
+        review = bool(reasons)
         out_rows.append({
             "source_file": r["source_file"], "unit_index": r["unit_index"],
             "unique_number": r.get("unique_number", ""),
@@ -211,6 +225,7 @@ def main():
             "ml_top_features": explain[k],
             "baseline_prediction": b_family, "baseline_tier": b_tier, "baseline_reason": b_why,
             "methods_agree": agree, "needs_review": review,
+            "review_reason": "; ".join(reasons),
         })
 
     os.makedirs(os.path.dirname(args.out) or ".", exist_ok=True)
@@ -224,7 +239,8 @@ def main():
     print(df["ml_prediction"].value_counts().to_string())
     print(f"\nMethods agree on {int(df['methods_agree'].sum())}/{len(df)}; "
           f"{int(df['needs_review'].sum())} flagged for human review "
-          f"(confidence < {LOW_CONFIDENCE:.2f} or the two methods disagree).")
+          f"(confidence < {LOW_CONFIDENCE:.2f}, the two methods disagree, or the unit "
+          f"was flagged only by eeprom_integrity).")
 
 
 if __name__ == "__main__":
