@@ -132,31 +132,10 @@ def selfcheck(args):
           f"({A.shape[0]} rows x {A.shape[1]} columns).")
 
 
-def main():
-    ap = argparse.ArgumentParser(description=__doc__)
-    ap.add_argument("--train", required=True, help="data/processed/train_units.csv")
-    ap.add_argument("--report", help="FT report .xlsx, or a folder of them")
-    ap.add_argument("--model", default="models/defect_classifier.joblib")
-    ap.add_argument("--out", default="reports/predictions.csv")
-    ap.add_argument("--selfcheck", action="store_true")
-    ap.add_argument("--test-units")
-    ap.add_argument("--test-features")
-    ap.add_argument("--no-shap", action="store_true", help="skip the per-unit explanation")
-    args = ap.parse_args()
-
-    if args.selfcheck:
-        if not (args.test_units and args.test_features):
-            raise SystemExit("--selfcheck needs --test-units and --test-features")
-        return selfcheck(args)
-    if not args.report:
-        raise SystemExit("--report is required (or use --selfcheck)")
-
-    files = (sorted(glob.glob(os.path.join(args.report, "**", "*.xlsx"), recursive=True))
-             if os.path.isdir(args.report) else [args.report])
-    if not files:
-        raise SystemExit(f"No .xlsx files found at {args.report}")
-
-    with open(args.train, encoding="latin-1") as f:
+def predict_files(files, train, model_path, use_shap=True, log=print):
+    """Predict the root cause of every failed unit in the given FT report files.
+    Returns (DataFrame of predictions, list of (file, units, failed, not_flagged))."""
+    with open(train, encoding="latin-1") as f:
         columns = list(csv.DictReader(f).fieldnames)
     for extra in ("PO", "model_target"):
         if extra not in columns:
@@ -167,32 +146,27 @@ def main():
         try:
             rows, n, n_ok = failed_unit_rows(path)
         except Exception as e:  # noqa: BLE001
-            print(f"  could not read {path}: {e}")
+            log(f"  could not read {path}: {e}")
             continue
         summary.append((os.path.basename(path), n, len(rows), n_ok))
         all_rows.extend(rows)
-
-    print(f"{'report':<40}{'units':>7}{'failed':>8}{'not flagged':>13}")
-    for name, n, nf, ok in summary:
-        print(f"{name:<40}{n:>7}{nf:>8}{ok:>13}")
     if not all_rows:
-        print("\nNo flagged (failed) units found -- nothing to predict.")
-        return
+        return pd.DataFrame(), summary
 
     tmp = write_temp_units(all_rows, columns)
     try:
-        _, _, _, X_new, _, _, names = ftfeatures.build_feature_matrix(args.train, tmp)
+        _, _, _, X_new, _, _, names = ftfeatures.build_feature_matrix(train, tmp)
     finally:
         os.remove(tmp)
 
-    model = joblib.load(args.model)
+    model = joblib.load(model_path)
     Xdf = pd.DataFrame(X_new, columns=names)
     if hasattr(model, "feature_names_in_"):
         Xdf = Xdf[list(model.feature_names_in_)]
     proba = model.predict_proba(Xdf)
     classes = list(model.classes_)
     pred_idx = proba.argmax(axis=1)
-    explain = [""] * len(Xdf) if args.no_shap else shap_top(model, Xdf, classes, pred_idx, list(Xdf.columns))
+    explain = [""] * len(Xdf) if not use_shap else shap_top(model, Xdf, classes, pred_idx, list(Xdf.columns))
 
     out_rows = []
     for k, r in enumerate(all_rows):
@@ -227,14 +201,43 @@ def main():
             "methods_agree": agree, "needs_review": review,
             "review_reason": "; ".join(reasons),
         })
+    return pd.DataFrame(out_rows), summary
+
+
+def main():
+    ap = argparse.ArgumentParser(description=__doc__)
+    ap.add_argument("--train", required=True, help="data/processed/train_units.csv")
+    ap.add_argument("--report", help="FT report .xlsx, or a folder of them")
+    ap.add_argument("--model", default="models/defect_classifier.joblib")
+    ap.add_argument("--out", default="reports/predictions.csv")
+    ap.add_argument("--selfcheck", action="store_true")
+    ap.add_argument("--test-units")
+    ap.add_argument("--test-features")
+    ap.add_argument("--no-shap", action="store_true", help="skip the per-unit explanation")
+    args = ap.parse_args()
+
+    if args.selfcheck:
+        if not (args.test_units and args.test_features):
+            raise SystemExit("--selfcheck needs --test-units and --test-features")
+        return selfcheck(args)
+    if not args.report:
+        raise SystemExit("--report is required (or use --selfcheck)")
+
+    files = (sorted(glob.glob(os.path.join(args.report, "**", "*.xlsx"), recursive=True))
+             if os.path.isdir(args.report) else [args.report])
+    if not files:
+        raise SystemExit(f"No .xlsx files found at {args.report}")
+
+    df, summary = predict_files(files, args.train, args.model, use_shap=not args.no_shap)
+    print(f"{'report':<40}{'units':>7}{'failed':>8}{'not flagged':>13}")
+    for name, n, nf, ok in summary:
+        print(f"{name:<40}{n:>7}{nf:>8}{ok:>13}")
+    if df.empty:
+        print("\nNo flagged (failed) units found -- nothing to predict.")
+        return
 
     os.makedirs(os.path.dirname(args.out) or ".", exist_ok=True)
-    with open(args.out, "w", newline="", encoding="utf-8") as f:
-        w = csv.DictWriter(f, fieldnames=list(out_rows[0].keys()))
-        w.writeheader()
-        w.writerows(out_rows)
-
-    df = pd.DataFrame(out_rows)
+    df.to_csv(args.out, index=False, encoding="utf-8")
     print(f"\nPredicted root cause for {len(df)} failed sensor(s) -> {args.out}\n")
     print(df["ml_prediction"].value_counts().to_string())
     print(f"\nMethods agree on {int(df['methods_agree'].sum())}/{len(df)}; "
